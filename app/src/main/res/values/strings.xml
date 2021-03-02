@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tugas Component</string>
+    <string name="sekolah">Asal Sekolah </string>
+    <string-array name="list_sekolah">
+        <item>SMA</item>
+        <item>MA</item>
+        <item>SMK</item>
+        <item>Pondok Pesantren</item>
+    </string-array>
+    <string name="suhu">Suhu </string>
+    <string-array name="list_suhu">
+        <item>Fahrenreit</item>
+        <item>Celcius</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>

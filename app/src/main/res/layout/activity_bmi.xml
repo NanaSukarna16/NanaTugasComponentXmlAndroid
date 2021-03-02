@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Berat Badan Ideal Anda !"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nama "
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" : "
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Masukan Nama"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Asal Sekolah"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" : "
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:id="@+id/spin_makanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/sekolah"
+            android:entries="@array/list_sekolah"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Umur "
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" : "
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Masukan Umur"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Berat Badan"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" : "
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/berat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Masukan BB"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tinggi Badan"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" : "
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Masukan Nama"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hitung"
+        android:backgroundTint="@color/biru"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Perhitungan Berat Badan !!!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan !!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" * Catatan : Berat Badan(KG), Tinggi Badan (M)"
+        android:layout_marginLeft="20dp"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="70dp"
+        android:textStyle="italic"
+        android:background="@color/black"/>
+
+
+
+
+</LinearLayout>
